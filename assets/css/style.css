@@ -1,0 +1,132 @@
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background-image: url('../images/Web\ screen\ 5.png');
+    background-color: black;
+    background-position: center;
+    background-size: cover;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* justify-content: center; */
+    color: #fff;
+}
+
+section{
+    background-color: white;
+    width: 300px;
+    padding: 20px;
+    color: black;
+    text-align: center;
+    word-wrap: break-word;
+    font-weight: bold;
+}
+h5{
+    margin: 20px;
+    text-transform:capitalize;
+}
+#company{
+    margin-bottom:0 !important ;
+    padding-bottom:0 !important ;
+}
+#bg , #bg2{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+#btn{
+    width: 250px;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 36px;
+    font-weight: bold;
+    background-color: aliceblue;
+    color: black;
+} 
+#btn2 , #print , #btn1{
+    width: 150px;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: aliceblue;
+    color: black;
+    margin: 20px;
+    /* margin-left: 180px; */
+}
+#home{
+    position: absolute;
+    width: 100px;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    left: 0%;
+    top: 90%;
+}
+.child {
+    text-align: center;
+    align-self:inherit;
+    width: 50%;
+    padding-left: 200px;
+  }
+#preview{
+    border-radius: 12px;
+    border: 5px solid #F8C800;
+}
+input[type="text"]{
+    background-color: transparent;
+    border: none;
+    color: aliceblue;
+    text-align: center;
+    width: 220px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+    /* margin-left: 140px; */
+}
+::placeholder{
+    font-size: 16px;
+    color: aliceblue;
+    font-weight: bold;
+}
+input:focus{
+outline: none;
+}
+a{
+    text-decoration: none;
+    font-size: 160px;
+    position: absolute;
+    bottom: 0;
+    z-index: 2000;
+    cursor: pointer;
+    margin: 25px;
+    left: 0;
+  }
+
+@media print{
+    body *:not(#myForm):not(#myForm *){
+        visibility: hidden;
+    }
+    #myForm{
+        top: 0;
+        left: 0;
+        margin:0;
+        padding: 0;
+        text-align: center; 
+        display: flex;
+        height: 100%;
+        width: 100%;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        /* margin-top: 15% ; */
+        margin-top: 20% ;
+    }
+}

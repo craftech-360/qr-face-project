@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+            
+    html,
+    body {
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+        background-image: url('../assets/images/Web\ screen\ 5.png');
+        background-color: black;
+        background-position: center;
+        background-size: cover;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content:space-around;
+        color: #fff;
+    }
+    h1 {
+        font:normal 60px Arial;
+        color:#FFFFFF;
+        text-shadow: 0 1px 0 #ccc,
+        0 2px 0 #dad30e,
+        0 3px 0 #dad30e,
+        0 4px 0 #dad30e,
+        0 5px 0 #dad30e,
+        0 6px 1px #dad30e,
+        0 0 5px #dad30e,
+        0 1px 3px rgba(0,0,0,.3),
+        0 3px 5px rgba(0,0,0,.2),
+        0 5px 10px rgba(0,0,0,.25),
+        0 10px 10px rgba(0,0,0,.2),
+        0 20px 20px rgba(0,0,0,.15);
+        text-align:center;
+    }
+    </style>
+</head>
+<body>
+    <h1 onclick="goToQr()"> QR <br> <span>REGISTRATION</span></h1>
+
+    <h1 onclick="goToFace()">FACE <br> <span>REGISTRATION</span></h1>
+    
+    <script>
+        function goToQr() {
+            // alert('QR')
+            location.href='/qr'
+        }
+        function goToFace() {
+            // alert('Face')
+            location.href='/face'
+        }
+    </script>
+</body>
+</html>
